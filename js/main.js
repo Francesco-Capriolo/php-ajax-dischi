@@ -4,7 +4,7 @@ const app = new Vue({
         albums: []
     },
     created() {
-        axios.get('http://localhost/php-ajax-dischi/server/controller.php')
+        axios.get('http://localhost/php-ajax-dischi/server/controller.php?genre=rock')
             .then((result) => {
                 this.albums = result.data.results;
             })

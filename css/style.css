@@ -2,6 +2,14 @@ body {
     background-color: #1e2d3b;
 }
 
+header {
+    background-color: #2e3a46;
+}
+
+.img-top {
+    width: 50px;
+}
+
 section {
     margin: 0 auto;
     width: 90%;

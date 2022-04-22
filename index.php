@@ -17,14 +17,16 @@
 <title></title>
 </head>
 
-<body>
-<header>
-    <?php include_once __DIR__ .'/partial/header.php'; ?>
-</header>
-<main id="app">
-<?php include_once __DIR__ .'/partial/main.php'; ?>
-</main>
-
+<body >
+    <div id="app">
+        <header class="d-flex justify-content-between align-items-center">
+            <?php include_once __DIR__ .'/partial/header.php'; ?>
+        </header>
+        <main  >
+        <?php include_once __DIR__ .'/partial/main.php'; ?>
+        </main>
+    </div>
+    
 <!-- axios cdn -->
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
