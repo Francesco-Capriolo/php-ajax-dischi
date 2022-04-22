@@ -1,0 +1,17 @@
+body {
+    background-color: #1e2d3b;
+}
+
+section {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #2e3a46;
+}
+
+img {
+    height: 160px;
+}
