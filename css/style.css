@@ -6,6 +6,10 @@ header {
     background-color: #2e3a46;
 }
 
+span {
+    color: white;
+}
+
 .img-top {
     width: 50px;
 }
@@ -20,6 +24,6 @@ section {
     background-color: #2e3a46;
 }
 
-img {
-    height: 160px;
+.card-img-top {
+    height: 150px;
 }

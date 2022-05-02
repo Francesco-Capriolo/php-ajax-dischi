@@ -1,19 +1,19 @@
 <section class="container-fluid">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 m-5">
-        <div class="col" v-for="album in albums">
+        <div class="col" v-for="disc in filteredDiscs">
             <div class="card h-100 p-2">
             <img
-                :src="album.poster"
+                :src="disc.poster"
                 class="card-img-top p-2"
-                :alt="album.title"
+                :alt="disc.title"
             />
             <div class="card-body">
-                <h5 class="card-title text-white">{{ album.title }}</h5>
+                <h5 class="card-title text-white">{{ disc.title }}</h5>
                 <p class="card-text text-secondary">
-                {{ album.author }}
+                {{ disc.author }}
                 </p>
                 <p class="card-text text-secondary">
-                {{ album.year }}
+                {{ disc.year }}
                 </p>
             </div>
             </div>

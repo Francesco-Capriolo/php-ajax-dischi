@@ -1,7 +1,8 @@
 <?php 
 $albums=[
     [
-        "poster"=>"https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg","title" =>"New Jersey",
+        "poster"=>"https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
+        "title" =>"New Jersey",
         "author" =>"Bon Jovi",
         "genre" =>"Rock",
         "year" =>"1988",
@@ -50,8 +51,8 @@ $albums=[
     [
         "poster"=> "https://images-na.ssl-images-amazon.com/images/I/81r3FVfNG3L._SY355_.jpg",
         "title" => "And Justice for All",
-        "author" => "Metallica","
-        genre" => "Metal",
+        "author" => "Metallica",
+        "genre" => "Metal",
         "year" => "1988",
     ],
     [
