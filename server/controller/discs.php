@@ -1,19 +1,18 @@
 <?php 
-    // esporre pubblicamente i dati del db.php
     include_once __DIR__ . '/../database/data.php';
 
     $discs = [];
 
-    // discs filtra in base al genere
+    //! discs filtra in base al genere
 
     if (!empty($_GET) && !empty($_GET['genre'])){
-        // la stringa richiesta dall'utente via queryString
+        //£ la stringa richiesta dall'utente via queryString
         $queryGenre = strtolower($_GET['genre']);
         foreach ($albums as $disc){
             $currentGenre = strtolower($disc['genre']);
             if ( $currentGenre == $queryGenre ){
                 $discs[] = $disc;
-                // array_push($discs, $disc);
+                //$ array_push($discs, $disc);
             }
         }
     } else {
@@ -22,6 +21,17 @@
 
     header('Content-Type: application/json');
     echo json_encode($discs);
+
+
+
+
+
+
+
+
+
+
+
 
     /* include_once __DIR__ . './database/data.php';
 

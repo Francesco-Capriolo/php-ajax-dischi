@@ -4,7 +4,7 @@ const app = new Vue({
         discs: [],
         filteredDiscs: [],
         genres: [],
-        selectedGenre: ''
+        selectedGenre: 'all'
     },
     mounted() {
         axios.get('http://localhost/php-ajax-dischi/server/controller/genres.php')
@@ -20,6 +20,8 @@ const app = new Vue({
             .then((response) => {
                 console.log(response);
                 this.discs = response.data;
+                // serve per il refresh della pagina.. il filtro è uguale a tutti i dischi 
+                this.filteredDiscs = this.discs;
             })
             .catch((error) => {
                 console.warn(error);

@@ -5,7 +5,7 @@
     </nav>
     <div class="me-3">
         <span>Select genre: </span>
-    <!-- @change per cambiare ogni volta l'emit che si vuole inviare all'app -->
+
         <select @change="filterDiscsByGenre" v-model="selectedGenre">
             <option value="all" selected>All</option>
             <option :value="genre.toLowerCase()" v-for="genre in genres">{{ genre }}</option>

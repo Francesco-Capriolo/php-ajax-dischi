@@ -1,5 +1,4 @@
 <?php
-    // esporre pubblicamente i dati del db.php
     include_once __DIR__ . '/../database/data.php';
 
     $genres = [];
